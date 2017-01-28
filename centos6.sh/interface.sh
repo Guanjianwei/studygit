@@ -1,4 +1,4 @@
-# 用于copyi centos6 虚拟机后更改网卡错误 --version 1.0
+# copy centos6 虚拟机后更改网卡名的错误 --version 1.0
 # By  GUAN
 #网卡配置文件路径
 w1='/etc/udev/rules.d/70-persistent-net.rules'
