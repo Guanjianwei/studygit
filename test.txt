@@ -1,8 +1,0 @@
-it is a test
-<<<<<<< HEAD
-yes, i've modify it!
-do you se
-=======
-it is cold!
-The rain outside!
->>>>>>> test
