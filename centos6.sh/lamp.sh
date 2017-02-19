@@ -1,11 +1,8 @@
 #!/bin/bash
-
-#cleanup,
+# mysql5.1.73;httpd2.2.32 ; php5.6.29
 # by GUI ---2016-09-11
 LOG_DIR=/var/log
 ROOT_UID=0  #$UID为0时，用户具有root权限
-LINES=50	#默认保存的行数
-E_XCD=66	#不能修改的目录
 E_NOTROOT=67	#非root用户将以error退出
 
 #必须用root用户来执行
@@ -60,7 +57,7 @@ echo "Install apache version 2.2."
 yum install -y gcc zlib-devel 
 cd /usr/local/src
 vhttp=httpd-2.2.32
-[ -f $vhttp.tar.bz2  ] || wget  http://mirrors.aliyun.com/apache/httpd/vhttp.tar.bz2
+[ -f $vhttp.tar.bz2  ] || wget  http://mirrors.aliyun.com/apache/httpd/$vhttp.tar.bz2
 tar -xjf $vhttp.tar.bz2 && cd $vhttp
 #check_ok
 ./configure \
