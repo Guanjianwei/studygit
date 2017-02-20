@@ -25,7 +25,7 @@ iptables -F
 
 
 install_mysqld(){
-	echo "Install mysql- 5.1.72..."
+	echo "Install mysql- 5.1.73..."
 	ar=`arch`
 	cd  /usr/local/src
 	#wget http://downloads.mysql.com/archives/get/file/mysql-5.1.72-linux-x86_64-glibc23.tar.gz
